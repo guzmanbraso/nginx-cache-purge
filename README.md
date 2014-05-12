@@ -29,6 +29,10 @@ directory.
  
         nginx-cache-purge "\.jpe*g" /var/cache/nginx/img 
 
+ 3. Delete all files that contain "style=dash.title" from the cache:
+
+	nginx-cache-purge-by-content 'style=dash.title' /var/cache/nginx/sitepages
+
 ## Installation 
 
  1. Clone the repo:
